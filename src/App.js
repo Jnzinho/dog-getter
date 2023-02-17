@@ -11,13 +11,21 @@ function App() {
   };
 
   return (
-    <div className="align">
-      <button className="btn" onClick={getPicture}>
-        Get Dog
-      </button>
-      {dogImageUrl !== "" && (
-        <img className="dog-image" src={dogImageUrl} alt="dog"></img>
-      )}
+    <div className="container">
+      <div className="align">
+        <button className="btn" onClick={getPicture}>
+          Get Dog
+        </button>
+        {dogImageUrl !== "" && (
+          <img className="dog-image" src={dogImageUrl} alt="dog"></img>
+        )}
+      </div>
+      <footer className="footer">
+        Project made by&nbsp;
+        <a className="link" href="https://github.com/Jnzinho">
+          Jnzinho
+        </a>
+      </footer>
     </div>
   );
 }
